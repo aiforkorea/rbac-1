@@ -24,4 +24,7 @@ def index():
     return render_template("main/index.html")
 @main.route("/services")
 def services():
-    pass
+    #pass
+    # pass 대신에 뭐라도 화면을 보여줘야 합니다.
+    return "<h1>서비스 페이지입니다</h1>" 
+    # 또는 실제 템플릿이 있다면: return render_template("services.html")
