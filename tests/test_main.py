@@ -10,3 +10,4 @@ def test_services_page(client):
     response = client.get('/services')
     # 아직 view 함수에 내용이 없어도, 최소한 서버 에러(500)는 안 나야 해요.
     assert response.status_code != 500
+    assert "서비스".encode('utf-8') in response.data # 화면에 '서비스'라는 글자가 있니?
